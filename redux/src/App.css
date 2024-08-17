@@ -1,0 +1,382 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*navbarr*/
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #25002E;
+}
+
+/* Body styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(45deg, #D4D0DF, #C3ADCC);
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Brand styling */
+.navbar-brand a {
+  color: white;
+  font-size: 1.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Navbar links */
+.navbar-links {
+  list-style: none;
+  display: flex;
+}
+
+.navbar-links li {
+  margin-left: 20px;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+.navbar-links a:hover {
+  background-color: #99f2c8;
+  color: #1f4037;
+}
+
+/* Navbar toggle (hamburger menu) */
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.navbar-toggle .bar {
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+.navbar-links {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background-color: rgba(31, 64, 55, 0.9);
+  transition: all 0.5s ease;
+}
+
+.navbar-links.active {
+  display: flex;
+}
+
+.navbar-toggle {
+  display: flex;
+}
+
+.navbar-links li {
+  text-align: center;
+margin: 10px 0;
+}
+
+.navbar-links a {
+  font-size: 1.25rem;
+  padding: 1rem;
+}
+}
+
+
+/*buttons navbar*/
+
+.navbtn {
+  background: linear-gradient(45deg, #d3a0e7, #C3ADCC);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+.navbtn:hover {
+  background: linear-gradient(45deg, #D4D0DF, #C3ADCC);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.navbtn:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+/* Form Container */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(80vh - 60px);
+  padding: 20px;
+}
+
+/* Sign-Up Form Styling */
+.signup-form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.signup-form h2 {
+  margin-bottom: 20px;
+  font-size: 1.75rem;
+  color: #1f4037;
+}
+
+.signup-form input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.signup-form input:focus {
+  border-color: #99f2c8;
+  outline: none;
+}
+
+/* Button Styling */
+.btn {
+  background: linear-gradient(45deg, #C3ADCC, #d3a0e7);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom:20px;
+}
+
+.btn:hover {
+  background: linear-gradient(45deg, #9476a0, #ac8bba);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-img {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: #000000;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-img:hover {
+  background-color: #D4D0DF;
+}
+
+/*dashboard styles*/
+
+
+main.main-container{
+  max-width: 400px;
+  margin-left: 400px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.product-detail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-image {
+  flex: 1 1 40%;
+}
+
+.product-info {
+    flex: 1 1 50%;
+}
+
+.product-info .price {
+    color: #888;
+    font-size: 1.5em;
+}
+
+.h4{
+
+  font-family: "Edu VIC WA NT Beginner", cursive;
+  font-optical-sizing: auto;
+}
+
+.h5{
+    font-family: "Bodoni Moda SC", serif;
+    font-optical-sizing: auto;
+}
+
+img{
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+/*detail*/
+
+.img{
+  margin-left: 60px;
+}
+
+.detail{
+  border: 1px solid #D4D0DF;
+  padding: 10px;
+  margin: 10px;
+  
+}
+
+/*component theme*/
+
+.box{
+  width: 10px;           
+  height: 10px;            
+  padding: 10px;            
+  margin: 10px;              
+  border: 2px solid #2c3e50; 
+  display: inline-block;    
+  vertical-align: top; 
+}
+
+.red{
+background-color: rgb(54, 216, 178);
+}
+
+.purple{
+background-color: rgb(171, 73, 171);
+}
+
+.pink{
+background-color: rgb(243, 170, 182);
+}
+
+
+p{
+  font-size: 30px
+}
+
+.delbtn {
+  background: linear-gradient(45deg, #C3ADCC, #d3a0e7);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom:20px;
+  margin-left: 1000px;
+}
+
+.delbtn:hover {
+  background: linear-gradient(45deg, #9476a0, #ac8bba);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.delbtn:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.email{
+  text-align: left;
+  margin-left: 20px;
+margin-bottom: 50px;
+
+}
